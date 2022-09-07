@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="survey.css">
+<title>survey form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Ti-Ade Survey Form</h1>
+            <p id="description">Thank you for helping us improve on how to serve you better with this platform
+            </p>
+        </header>
+    </div>
+    <form class="form-group">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="formcontrol" placeholder="Enter your name here"required>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="text" id="mail" class="formcontrol" placeholder="Enter your email here"required>
+        </div>
+        <div class="form-group">
+            <label for="phone no">Phone no:</label>
+            <input type="number" id="phone number" class="formcontrol" placeholder="Enter your phone number here"required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address<span class="clue">(optional)</span>:</label>
+            <input type="text" id="address" class="formcontrol" placeholder="Enter your address here"required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age<span class="clue">(optional)</span>:</label>
+            <input type="text" id="mail" class="formcontrol" placeholder="Enter your age here"required>
+        </div>
+        <div class="form-group">
+            <p id="quest">which of these options best describe your current role ?
+            </p>
+            <select id="dropdown" class="formcontrol">
+                <option value="">select your current role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="employer">Employer</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p id="quest">How do you come to know about Ti-Ade ?</p>
+            <label for="">
+                <input type="radio" name="source" value="friends" class="inputradio">Friends
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="newspapers" class="inputradio">Newspapers
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="Internet" class="inputradio">Internet
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="others" class="inputradio">Others
+            </label>
+        </div>
+        <div class="form-group">
+            <p id="quest">Which will you prefer we work on to navigate our platform easily ?
+            </p>
+            <label for="">
+                <input type="checkbox" id="prefer" value="back-end-developer" class="checkbox">Back-end-developer
+            </label>
+            <label for="">
+                <input type="checkbox" id="prefer" value="front-end-developer" class="checkbox">Front-end-developer
+            </label>
+            <label for="">
+                <input type="checkbox" id="prefer" value="graphic user interface" class="checkbox">Graphic User Interface
+            </label>
+            <label for="">
+                <input type="checkbox" id="prefer" value="web-development" class="checkbox">Web-Development
+            </label>
+        </div>
+        <div class="form-group">
+            <p id="quest">Leave your comment</p>
+            <textarea type="text" name="feedback" id="" cols="30" rows="10" class="textarea" placeholder="leave your comment"required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="button" class="btn">submit</button>
+        </div>
+    
+    </form>
+
+</body>
+</html>
